@@ -4,11 +4,11 @@ namespace raoul2000\widget\twbsmaxlength;
 use yii\web\AssetBundle;
 
 /**
- * @author Raoul <raoul.boulard@gmail.com>
+ * @author Raoul
  */
 class TwbsMaxlengthAsset extends AssetBundle
 {
-
+	public $sourcePath = '@bower/bootstrap-maxlength';
 	public $depends = [
 		'yii\web\JqueryAsset'
 	];
@@ -17,7 +17,6 @@ class TwbsMaxlengthAsset extends AssetBundle
 	 */
 	public function init()
 	{
-		$this->sourcePath = __DIR__.'/assets';
 		$this->js = [
 			'bootstrap-maxlength'.( YII_ENV_DEV ? '.js' : '.min.js' )
 		];
